@@ -28,8 +28,8 @@ class ViewComposerProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->share('tags', Tag::get());
         view()->share('partners', Partner::get());
+        //view()->share('tags', Tag::get());
         view()->share('users', User::get());
         view()->share('sermons', Sermon::get());
     }
