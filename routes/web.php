@@ -126,7 +126,7 @@ Route::middleware(['auth:sanctum', 'verified', 'can:is_verified'])->group(functi
 
 
 
-//emails routes
+//emails routes below
 Route::get('/email', [MailController::class, 'welcomeEmail'])->name('mail.welcome');
 Route::get('/unsubscribe/newsletter/{id}/{email}',[MailController::class, 'unsubNewsletter'])->name('newsletter.unsubscribe');
 Route::post('/unsub/newsletter/{id}',[MailController::class, 'unsubNews'])->name('unsub.newsletter');
